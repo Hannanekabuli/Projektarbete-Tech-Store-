@@ -33,7 +33,17 @@
 
     <script>
         var cartItems = localStorage.getItem("product");
+        var data = [];
+        if(cartItems != "" || cartItems != "underfind")
+        {
+            data = JSON.parse(cartItem);
+            RenderData();
+        }
+
         
+
+
+
     </script>
 </body>
 </html>
