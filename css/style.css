@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding:0;
+}
+
+
+.top-bar{
+  background: rgb(0, 3, 3);
+  width: 100%;
+  height: 60px;
+}
+
+.top-bar-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  color: white;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+li{
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px; 
+  color: white;
+}
