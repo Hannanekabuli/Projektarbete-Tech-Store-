@@ -23,6 +23,19 @@ function RenderData(data){
         var quantity = document.createElement(`div`);
         var button = document.createElement(`button`);
 
+        listItems.className = "item-list";
+        product.className = "product";
+        product.id = item.id;
+        itemTitle.className = "item-title";
+        image.className = "image-div";
+        description.className = "description";
+        price.className = "price";
+        quantity.className = "quantity";
+        button.className = "add-button";
+        button.type = "button";
+        button.textcontent = "Add To Cart";
+        button.addEventlistener("click", clickHandler);
+
         
     })
 }
