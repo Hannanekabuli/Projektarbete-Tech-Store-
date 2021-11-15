@@ -13,5 +13,9 @@ function RenderData(data){
     if(listOfData)
     cartInfo.innerText = " " + JSON.parse(localStorage.getItem("product")).length;
 
-    
+    data.forEach((item,index) =>{
+        var listItems = document.createElement("div");
+        var product = document.createElement("div");
+        
+    })
 }
