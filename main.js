@@ -3,3 +3,7 @@ fetch("./products.json")
     return response.json();
 })
 .then(data => RenderData(data));
+
+var content = document.querySelector(`.content`);
+var ShoppingCart = [];
+
