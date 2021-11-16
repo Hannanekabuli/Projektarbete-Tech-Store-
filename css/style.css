@@ -18,13 +18,9 @@ body{
   color: white;
 }
 
-ul{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 450px;
+.fa-shopping-cart{
+  color: gold;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 25px;
 }
-li{
-  list-style: none;
-}
-
