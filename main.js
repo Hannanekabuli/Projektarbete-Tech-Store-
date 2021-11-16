@@ -55,3 +55,9 @@ function RenderData(data){
     });
 
 }
+
+var result = ShoppingCart.find(data.id);
+ShoppingCart.push(data);
+
+if(ShoppingCart.length == 0)
+ShoppingCart.push
