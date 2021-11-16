@@ -36,6 +36,31 @@ function RenderData(data){
         button.textcontent = "Add To Cart";
         button.addEventlistener("click", clickHandler);
 
-        
+        itemTitle.innerHTML = item.title;
+        image.src ="./assets/" + item.image;
+        description.innerHTML = item.description;
+        price.innerHTML = item.price;
+
+        product.append(itemTitle);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     })
 }
