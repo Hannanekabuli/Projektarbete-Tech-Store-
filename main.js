@@ -9,7 +9,7 @@ var ShoppingCart = [];
 
 function RenderData(data){
     var cartInfo = document.querySelector(`.fa-shopping-cart`);
-    var listOfData = JASON.parse(localStorage.getItem("product";
+    var listOfData = JASON.parse(localStorage.getItem("product"));
     if(listOfData)
     cartInfo.innerText = " " + JSON.parse(localStorage.getItem("product")).length;
 
@@ -42,25 +42,16 @@ function RenderData(data){
         price.innerHTML = item.price;
 
         product.append(itemTitle);
+        product.append(image);
+        product.append(description);
+        product.append(price);
+        product.append(quantity);
+        product.appendChild(button);
+        listItems.append(product);
 
+        listItems.append(product);
+        content.append(itemTitle);
 
+    });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    })
 }
