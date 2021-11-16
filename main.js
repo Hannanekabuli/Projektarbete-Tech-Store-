@@ -16,12 +16,12 @@ function RenderData(data){
     data.forEach((item,index) =>{
         var listItems = document.createElement("div");
         var product = document.createElement("div");
-        var itemTitle = document.createElement(`h2`);
-        var image = document.createElement(`img`);
-        var description = document.createElement(`p`);
-        var price = document.createElement(`div`);
-        var quantity = document.createElement(`div`);
-        var button = document.createElement(`button`);
+        var itemTitle = document.createElement('h2');
+        var image = document.createElement('img');
+        var description = document.createElement('p');
+        var price = document.createElement('div');
+        var quantity = document.createElement('div');
+        var button = document.createElement('button');
 
         listItems.className = "item-list";
         product.className = "product";
