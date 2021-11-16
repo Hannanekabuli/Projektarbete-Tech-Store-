@@ -19,8 +19,9 @@ body{
 }
 
 .fa-shopping-cart{
-  color: gold;
+  color: rgb(10, 9, 0);
   font-size: 25px;
   cursor: pointer;
   margin-right: 25px;
 }
+
