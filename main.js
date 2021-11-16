@@ -56,6 +56,22 @@ function RenderData(data){
 
 }
 
+
+ShoppingCart.forEach(el => {
+    var result = el.id == data.id;
+    if(result)
+    {
+        data.quantity = data.quantity + el.quantity;
+        data.price = data.guantity *data.price;
+        el.id = data.id;
+        el.title = data.title;
+        el.price = data.price;
+        el.description = data.description;
+        el.image = data.image;
+        el.quanrity = data.quantity;
+    }
+});
+
 var result = ShoppingCart.find(data.id);
 ShoppingCart.push(data);
 
