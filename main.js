@@ -56,7 +56,15 @@ function RenderData(data){
 
 }
 
-
+function clickHandler(e){
+    var clickedItemValue = e.target.parentNode.children;
+    var div = e.target.parentNode;
+    var data = {
+        id: div.id,
+        title: clickedItemValue[0].innerText,
+        image: clickedItemValue[1].src.split("/").slice(-1).pop(),
+    }
+}
 ShoppingCart.forEach(el => {
     var result = el.id == data.id;
     if(result)
