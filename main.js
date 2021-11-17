@@ -99,4 +99,8 @@ if(!result)
 if(ShoppingCart.length == 0)
 ShoppingCart.push(data);
 
-
+var cartInfo = document.querySelector('.fa-shopping-cart');
+cartInfo.innerText = " " + ShoppingCart.length;
+localStorage.setItem("product", JSON.stringify(shoppingCart));
+shoppingCart = [];
+}
