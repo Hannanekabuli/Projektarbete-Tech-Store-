@@ -63,6 +63,9 @@ function clickHandler(e){
         id: div.id,
         title: clickedItemValue[0].innerText,
         image: clickedItemValue[1].src.split("/").slice(-1).pop(),
+        description: clickedItemValue[2].iinerText,
+        price: clickedItemValue[3].innerText,
+        quantity: 1,
     }
 }
 ShoppingCart.forEach(el => {
