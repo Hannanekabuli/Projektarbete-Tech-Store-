@@ -66,8 +66,17 @@ function clickHandler(e){
         description: clickedItemValue[2].iinerText,
         price: clickedItemValue[3].innerText,
         quantity: 1,
+    };
+
+    //load old data
+    var old = localStorage.getItem("product");
+    if(old  != "[]" && old != "underfind")
+    {
+        var json = JSON.parse(old);
+        if(json)
+        jason.forEach(d => ShoppingCart.push(d));
     }
-}
+
 ShoppingCart.forEach(el => {
     var result = el.id == data.id;
     if(result)
