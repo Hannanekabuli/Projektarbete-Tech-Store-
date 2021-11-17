@@ -1,27 +1,27 @@
 fetch("./products.json")
 .then(response => {
-    return response.json();
+   return response.json();
 })
 .then(data => RenderData(data));
 
-var content = document.querySelector(`.content`);
+var content =  document.querySelector('.content');
 var ShoppingCart = [];
 
 function RenderData(data){
     var cartInfo = document.querySelector('.fa-shopping-cart');
-     var listOfData = JASON.parse(localStorage.getItem("product"));
+    var listOfData = JSON.parse(localStorage.getItem("product"));
     if(listOfData)
     cartInfo.innerText = " " + JSON.parse(localStorage.getItem("product")).length;
 
-    data.forEach((item,index) =>{
+    data.forEach((item, index) => {
         var listItems = document.createElement("div");
         var product = document.createElement("div");
-        var itemTitle = document.createElement('h2');
-        var image = document.createElement('img');
-        var description = document.createElement('p');
-        var price = document.createElement('div');
-        var quantity = document.createElement('div');
-        var button = document.createElement('button');
+        var itemTitle =  document.createElement('h2');
+        var image =  document.createElement('img');
+        var description =  document.createElement('p');
+        var price =  document.createElement('div');
+        var quantity =  document.createElement('div');
+        var button =  document.createElement('button');
 
         listItems.className = "item-list";
         product.className = "product";
@@ -29,15 +29,15 @@ function RenderData(data){
         itemTitle.className = "item-title";
         image.className = "image-div";
         description.className = "description";
-        price.className = "price";
+        price.className ="price";
         quantity.className = "quantity";
-        button.className = "add-button";
-        button.type = "button";
-        button.textcontent = "Add To Cart";
-        button.addEventlistener("click", clickHandler);
+        button.className ="add-button";
+        button.type ="button";
+        button.textContent = "Add To Cart";
+        button.addEventListener("click", ClickHandler);
 
         itemTitle.innerHTML = item.title;
-        image.src ="./assets/" + item.image;
+        image.src = "./assets/" + item.image;
         description.innerHTML = item.description;
         price.innerHTML = item.price;
 
@@ -50,57 +50,57 @@ function RenderData(data){
         listItems.append(product);
 
         listItems.append(product);
-        content.append(itemTitle);
+        content.append(listItems);
 
     });
 
 }
 
-function clickHandler(e){
-    var clickedItemValue = e.target.parentNode.children;
+function ClickHandler(e){
+    var clickedItemValue =  e.target.parentNode.children;
     var div = e.target.parentNode;
     var data = {
         id: div.id,
         title: clickedItemValue[0].innerText,
         image: clickedItemValue[1].src.split("/").slice(-1).pop(),
-        description: clickedItemValue[2].iinerText,
+        description: clickedItemValue[2].innerText,
         price: clickedItemValue[3].innerText,
         quantity: 1,
     };
 
-    //load old data
+    // load old data
     var old = localStorage.getItem("product");
-    if(old  != "[]" && old != "underfind")
+    if(old != "[]" && old != "undefined")
     {
         var json = JSON.parse(old);
         if(json)
-        jason.forEach(d => ShoppingCart.push(d));
+        json.forEach(d => ShoppingCart.push(d));
     }
 
-ShoppingCart.forEach(el => {
-    var result = el.id == data.id;
-    if(result)
-    {
-        data.quantity = data.quantity + el.quantity;
-        data.price = data.guantity *data.price;
-        el.id = data.id;
-        el.title = data.title;
-        el.price = data.price;
-        el.description = data.description;
-        el.image = data.image;
-        el.quanrity = data.quantity;
-    }
-});
+    ShoppingCart.forEach(el =>{
+        var result = el.id == data.id;
+        if(result)
+        {
+            data.quantity = data.quantity + el.quantity;
+            data.price = data.quantity  * data.price;
+            el.id = data.id;
+            el.title =data.title;
+            el.price = data.price;
+            el.description = data.description;
+            el.image= data.image;
+            el.quantity = data.quantity;
+        }
+    });
 
-var result = ShoppingCart.find(data.id);
-if(!result)
+    var result =  ShoppingCart.find((e) => e.id == data.id);
+    if(!result)
+        ShoppingCart.push(data);
+
+   if(ShoppingCart.length ==0)
     ShoppingCart.push(data);
 
-if(ShoppingCart.length == 0)
-ShoppingCart.push(data);
-
-var cartInfo = document.querySelector('.fa-shopping-cart');
-cartInfo.innerText = " " + ShoppingCart.length;
-localStorage.setItem("product", JSON.stringify(shoppingCart));
-shoppingCart = [];
+    var cartInfo = document.querySelector('.fa-shopping-cart');
+    cartInfo.innerText = " " + ShoppingCart.length;
+    localStorage.setItem("product", JSON.stringify(ShoppingCart));
+    ShoppingCart = [];
 }
