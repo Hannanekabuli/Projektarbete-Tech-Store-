@@ -93,7 +93,10 @@ ShoppingCart.forEach(el => {
 });
 
 var result = ShoppingCart.find(data.id);
-ShoppingCart.push(data);
+if(!result)
+    ShoppingCart.push(data);
 
 if(ShoppingCart.length == 0)
-ShoppingCart.push
+ShoppingCart.push(data);
+
+
