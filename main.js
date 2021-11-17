@@ -8,8 +8,8 @@ var content = document.querySelector(`.content`);
 var ShoppingCart = [];
 
 function RenderData(data){
-    var cartInfo = document.querySelector(`.fa-shopping-cart`);
-    var listOfData = JASON.parse(localStorage.getItem("product"));
+    var cartInfo = document.querySelector('.fa-shopping-cart');
+     var listOfData = JASON.parse(localStorage.getItem("product"));
     if(listOfData)
     cartInfo.innerText = " " + JSON.parse(localStorage.getItem("product")).length;
 
