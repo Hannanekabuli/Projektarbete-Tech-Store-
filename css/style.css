@@ -55,6 +55,11 @@ li a{
   overflow: auto;
 }
 
+.h2 {
+  margin-left: 860px;
+  font-size: 30px;
+}
+
 .content{
   width: 100%;
   height: 85vh;
