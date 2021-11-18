@@ -11,10 +11,11 @@
 <body>
     <div class="top-bar">
         <div class="top-bar-item">
-            <a href="./index.html" class="page-name">TECH STORE</a>
+            <a href="./index.html" class="page-name">TECH STORE
+            </a>
             <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./index.html">PRODUCT</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Product</a></li>
             </ul>
             <a href="./shoppingCart.html" class="shopping-cart"><i class="fas fa-shopping-cart"></i></a>
         </div>
@@ -24,7 +25,7 @@
         <div class="content"></div>
     </div>
     <div class="footer">
-        <ul class="footer-item">
+        <ul class="footer-items">
             <li><a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
             <li><a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
             <li><a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
@@ -35,13 +36,13 @@
 
         var cartItems = localStorage.getItem("product");
         var data = [];
-        if(cartItems != "" || cartItems != "underfind")
+        if(cartItems != "" || cartItems != "undefined")
         {
-            data = JSON.parse(cartItem);
+            data = JSON.parse(cartItems);
             RenderData();
         }
 
-         function RenderData(){
+        function RenderData(){
             if(data.length == 0) 
             {
                 document.querySelector('.content').innerText = "Empty";
