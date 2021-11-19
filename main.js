@@ -33,7 +33,7 @@ function RenderData(data){
         quantity.className = "quantity";
         button.className ="add-button";
         button.type ="button";
-        button.textContent = "Lägg till kundvagnen";
+        button.textContent = "Lägg till i kundvagnen";
         button.addEventListener("click", ClickHandler);
 
         itemTitle.innerHTML = item.title;
