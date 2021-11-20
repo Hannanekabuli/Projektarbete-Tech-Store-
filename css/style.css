@@ -163,3 +163,22 @@ li a{
     font-size: 18px;
   }
 }
+
+.total-container{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.total-content{
+  width: 100%;
+  height: 100px;
+}
+
+.total-price{
+  text-align: center;
+  font-size: 25px;
+}
