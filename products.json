@@ -32,31 +32,31 @@
     },{
         "id": "6",
         "title": "iphone 7",
-        "description": "Sleek and powerful smartphone from One Plus.",
+        "description": "Sleek and powerful smartphone iphone.",
         "image": "iphone 7.png",
         "price": 9995
     },{
         "id": "7",
         "title": "iphone 8",
-        "description": "Really cool edge to edge smartphone from Samsung.",
+        "description": "Stylish design with many different colors.",
         "image": "iphone 8.png",
         "price": 10095
     },{
         "id": "8",
         "title": "iPhone 11",
-        "description": "Last years phone from Apple with a beautiful all display front.",
+        "description": "A phone with new cameras.",
         "image": "iPhone 11.png",
         "price": 11595
     }, {
         "id": "9",
         "title": "samsung s22",
-        "description": "Super nice and beautiful smartphone from LG.",
+        "description": "Super nice and beautiful smartphone from samsung.",
         "image": "samsung s22.png",
         "price": 12345
     },{
         "id": "10",
         "title": "samsung s23",
-        "description": "Sleek and powerful smartphone from One Plus.",
+        "description": "Sleek and powerful smartphone from samsung.",
         "image": "samsung s23.png",
         "price": 12995
     }
