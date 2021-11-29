@@ -33,24 +33,21 @@ function RenderData(data){
         quantity.className = "quantity";
         button.className ="add-button";
         button.type ="button";
-        button.textContent = "Lägg till i kundvagnen";
+        button.innerHTML= `<i class="fa fa-cart-plus" aria-hidden="true"></i> lägg till kundvagnen`;
         button.addEventListener("click", ClickHandler);
-        var myImage = new Image();
-        var ImgSrc = "<img scr=./assets./70021.png";
-        myImage.setAttribute("src",ImgSrc);
-        myImage.style.position = "Absolut";
+    
         
 
         itemTitle.innerHTML = item.title;
         image.src = "./assets/" + item.image;
         description.innerHTML = item.description;
         price.innerHTML = item.price;
-       
         product.append(itemTitle);
-        product.append(image);
         product.append(description);
+        product.append(image);
+        
         product.append(price);
-        product.append(quantity);
+        
         product.appendChild(button);
         listItems.append(product);
 

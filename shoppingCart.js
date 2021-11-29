@@ -38,12 +38,15 @@ var cartItems = localStorage.getItem("product");
             priceContainer.className = "price-container";
             button.className ="add-button";
             button.type ="button";
-            button.textContent = "Ta bort";
-            var myImage = new Image();
-            var ImgSrc = "<img scr=./assets/trash.png";
-            myImage.setAttribute("src",ImgSrc);
-            myImage.style.position = "Absolut";
+            
+            button.innerHTML= `<i class="fa fa-trash" aria-hidden="true"></i> Ta Bort`;
+
             button.addEventListener("click", ClickHandler);
+            
+            var buttons = document.getElementsByClassName("button");
+            for (var b = 0; b < buttons.length; b++) {
+                buttons[b].src = "./assets/trash.png";   
+            }
 
             itemTitle.innerHTML = item.title;
             image.src = "./assets/" + item.image;
@@ -53,12 +56,15 @@ var cartItems = localStorage.getItem("product");
             {
                 quantity.innerHTML = "Quantity: " + item.quantity;
             }
+            
             product.append(image);
             product.append(itemTitle);
+            product.append(priceContainer);
             priceContainer.append(quantity);
             priceContainer.append(price);
-            product.append(priceContainer);
-            product.appendChild(button,myImage);
+            
+            // product.appendChild(trash);
+            product.appendChild(button);
             listItems.append(product);
 
             listItems.append(product);
