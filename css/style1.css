@@ -104,7 +104,7 @@ body{
   
   .add-button{
     font-size: 17px;
-    background: orchid;
+    background: rgb(204, 6, 6);
     width: 90%;
     border-radius: 10px;
     outline: none;
@@ -121,8 +121,10 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 6px;
+    background-color: lightgray;
   }
-  
+ 
+   
   .description{
     padding-left: 10px;
     overflow: hidden;
@@ -131,11 +133,11 @@ body{
   .price, .quantity{
     font-size: 16px;
     font-weight: bold;
-    border-bottom: 2px solid mediumvioletred;
+    border-bottom: 2px solid lightgray;
   }
   
   .item-list:hover{
-    background: plum;
+    background: lightgray;
     transition: 0.3s ease-in-out;
   }
   
