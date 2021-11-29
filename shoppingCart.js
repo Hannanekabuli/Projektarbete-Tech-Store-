@@ -39,12 +39,16 @@ var cartItems = localStorage.getItem("product");
             button.className ="add-button";
             button.type ="button";
             button.textContent = "Ta bort";
+            var myImage = new Image();
+            var ImgSrc = "<img scr=./assets/trash.png";
+            myImage.setAttribute("src",ImgSrc);
+            myImage.style.position = "Absolut";
             button.addEventListener("click", ClickHandler);
 
             itemTitle.innerHTML = item.title;
             image.src = "./assets/" + item.image;
             description.innerHTML = item.description;
-            price.innerHTML = "Price: " + item.price;
+            price.innerHTML = item.price;
             if(item.quantity > 1)
             {
                 quantity.innerHTML = "Quantity: " + item.quantity;
@@ -56,7 +60,7 @@ var cartItems = localStorage.getItem("product");
             priceContainer.append(quantity);
             priceContainer.append(price);
             product.append(priceContainer);
-            product.appendChild(button);
+            product.appendChild(button,myImage);
             listItems.append(product);
 
             listItems.append(product);
