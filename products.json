@@ -4,60 +4,24 @@
         "title": "iPhone X",
         "description": "Last years phone from Apple with a beautiful all display front.",
         "image": "iPhoneX.png",
-        "price": 11495
+        "price": "11495 kr"
     },{
         "id": "2",
         "title": "One Plus 5",
         "description": "Sleek and powerful smartphone from One Plus.",
         "image": "OnePlus5.png",
-        "price": 4995
+        "price": "4995 kr"
     },{
         "id": "3",
         "title": "Galaxy S8",
         "description": "Really cool edge to edge smartphone from Samsung.",
         "image": "SamsungS8.png",
-        "price": 7990
+        "price": "7990 kr"
     },{
         "id": "4",
         "title": "LG V30",
         "description": "Super nice and beautiful smartphone from LG.",
         "image": "LGV30.png",
-        "price": 7495 
-    },{
-        "id": "5",
-        "title": "iPhone 6",
-        "description": "Beautiful iphone from Apple with a beautiful all display front.",
-        "image": "iPhone 6.png",
-        "price": 9855 
-    },{
-        "id": "6",
-        "title": "iphone 7",
-        "description": "Sleek and powerful smartphone iphone.",
-        "image": "iphone 7.png",
-        "price": 9995
-    },{
-        "id": "7",
-        "title": "iphone 8",
-        "description": "Stylish design with many different colors.",
-        "image": "iphone 8.png",
-        "price": 10095
-    },{
-        "id": "8",
-        "title": "iPhone 11",
-        "description": "A phone with new cameras.",
-        "image": "iPhone 11.png",
-        "price": 11595
-    }, {
-        "id": "9",
-        "title": "samsung s22",
-        "description": "Super nice and beautiful smartphone from samsung.",
-        "image": "samsung s22.png",
-        "price": 12345
-    },{
-        "id": "10",
-        "title": "samsung s23",
-        "description": "Sleek and powerful smartphone from samsung.",
-        "image": "samsung s23.png",
-        "price": 12995
+        "price": "7495 kr" 
     }
 ]
