@@ -53,10 +53,8 @@ var cartItems = localStorage.getItem("product");
             {
                 quantity.innerHTML = "Quantity: " + item.quantity;
             }
-
-            product.append(itemTitle);
             product.append(image);
-            product.append(description);
+            product.append(itemTitle);
             priceContainer.append(quantity);
             priceContainer.append(price);
             product.append(priceContainer);
