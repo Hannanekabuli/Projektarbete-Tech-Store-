@@ -3,7 +3,6 @@ body{
     padding:0;
   }
   
-  
   .top-bar{
     background: black;
     width: 100%;
@@ -91,10 +90,9 @@ body{
   }
   
   .item-title{
-    font-size: 17px;
+    font-size: 30px;
     text-align: center;
     padding-top: 8px;
-    border-bottom: 1px solid black;
     padding: 3px;
     width: 100%;
   }
@@ -105,7 +103,7 @@ body{
     width: 90%;
     border-radius: 10px;
     outline: none;
-    color: aliceblue;
+    color: white;
     font-weight: bold;
     cursor: pointer;
     padding: 5px;
@@ -121,22 +119,11 @@ body{
     background-color: lightgray;
     border-radius: 10px;
   }
- 
-   
-  .description{
-    padding-left: 10px;
-    overflow: hidden;
-  }
   
-  .price, .quantity{
+  .price{
     font-size: 16px;
     font-weight: bold;
-    margin-right: 50px;
-  }
-  
-  .item-list:hover{
-    background: lightgray;
-    transition: 0.3s ease-in-out;
+    margin-right: 55px;
   }
   
   .price-container{
@@ -147,12 +134,7 @@ body{
     align-items: center;
   }
   
-  @media only screen and (max-width: 750px) {
-    .fa-shopping-cart{
-      display:flex;
-      font-size: 18px;
-    }
-  }
+ 
 
   .total-container{
     width: 100%;
