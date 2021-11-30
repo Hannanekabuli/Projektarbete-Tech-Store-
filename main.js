@@ -17,8 +17,8 @@ function RenderData(data){
         var listItems = document.createElement("div");
         var product = document.createElement("div");
         var itemTitle =  document.createElement('h2');
-        var image =  document.createElement('img');
         var description =  document.createElement('p');
+        var image =  document.createElement('img');
         var price =  document.createElement('div');
         var quantity =  document.createElement('div');
         var button =  document.createElement('button');
@@ -27,27 +27,25 @@ function RenderData(data){
         product.className = "product";
         product.id = item.id;
         itemTitle.className = "item-title";
-        image.className = "image-div";
         description.className = "description";
+        image.className = "image-div";
         price.className ="price";
         quantity.className = "quantity";
         button.className ="add-button";
         button.type ="button";
-        button.innerHTML= `<i class="fa fa-cart-plus" aria-hidden="true"></i> lägg till kundvagnen`;
+        button.textContent = "Add To Cart";
         button.addEventListener("click", ClickHandler);
-    
-        
 
         itemTitle.innerHTML = item.title;
-        image.src = "./assets/" + item.image;
         description.innerHTML = item.description;
+        image.src = "./assets/" + item.image;
         price.innerHTML = item.price;
+
         product.append(itemTitle);
         product.append(description);
         product.append(image);
-        
         product.append(price);
-        
+        product.append(quantity);
         product.appendChild(button);
         listItems.append(product);
 
@@ -64,8 +62,8 @@ function ClickHandler(e){
     var data = {
         id: div.id,
         title: clickedItemValue[0].innerText,
-        image: clickedItemValue[1].src.split("/").slice(-1).pop(),
-        description: clickedItemValue[2].innerText,
+        description: clickedItemValue[1].innerText,
+        image: clickedItemValue[2].src.split("/").slice(-1).pop(),
         price: clickedItemValue[3].innerText,
         quantity: 1,
     };
@@ -87,9 +85,9 @@ function ClickHandler(e){
             data.price = data.quantity  * data.price;
             el.id = data.id;
             el.title =data.title;
-            el.price = data.price;
             el.description = data.description;
             el.image= data.image;
+            el.price = data.price;
             el.quantity = data.quantity;
         }
     });
