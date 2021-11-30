@@ -38,15 +38,8 @@ var cartItems = localStorage.getItem("product");
             priceContainer.className = "price-container";
             button.className ="add-button";
             button.type ="button";
-            
             button.innerHTML= `<i class="fa fa-trash" aria-hidden="true"></i> Ta Bort`;
-
             button.addEventListener("click", ClickHandler);
-            
-            var buttons = document.getElementsByClassName("button");
-            for (var b = 0; b < buttons.length; b++) {
-                buttons[b].src = "./assets/trash.png";   
-            }
 
             itemTitle.innerHTML = item.title;
             image.src = "./assets/" + item.image;
