@@ -135,7 +135,8 @@ body{
   
   .total-price{
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .köp{
