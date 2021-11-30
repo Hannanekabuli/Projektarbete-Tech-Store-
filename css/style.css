@@ -60,28 +60,6 @@ body{
   flex-direction: column;
 }
 
-.footer{
-  background: rgb(0, 12, 12);
-  width: 100%;
-  height: 60px;
-}
-
-.footer-items{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 95%;
-}
-
-.footer-items p{
-  color:white;
-}
-
-.fa-facebook, .fa-instagram, .fa-youtube {
-  color: rgb(245, 242, 237);
-  font-size: 25px;
-}
-
 .item-list{
   width: 1000px;
   height: 2000px;
