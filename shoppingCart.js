@@ -56,7 +56,6 @@ var cartItems = localStorage.getItem("product");
             priceContainer.append(quantity);
             priceContainer.append(price);
             
-            // product.appendChild(trash);
             product.appendChild(button);
             listItems.append(product);
 
