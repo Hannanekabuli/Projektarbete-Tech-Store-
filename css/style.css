@@ -80,9 +80,9 @@ body{
 }
 
 .add-button{
-  font-size: 20px;
+  font-size: 28px;
   background: rgb(50, 101, 241);
-  width: 50%;
+  width: 20%;
   height: 55px;
   border-radius: 10px;
   color: white;
