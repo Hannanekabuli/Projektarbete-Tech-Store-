@@ -61,14 +61,16 @@ body{
 }
 
 .item-list{
-  border-radius: 8px;
-  margin: 2px 10px;
+  width: 100%;
+  background-color: rgb(236, 235, 235);
+  margin: 1px;
 }
 
 .image-div{
   width: 350px;
   height: 600px;
 }
+
 .item-title{
   font-size: 50px;
   text-align: center;
