@@ -1,106 +1,44 @@
 <!DOCTYPE HTML>
 
 <html>
-    <head>
-        <title>TechStore</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Visit www.fontawesome.com on how to add font icons to your project -->
-        <!-- Link your stylesheet file/files, do NOT write styles in the html file! -->
-        <script src="./main.js"></script>
-        <link rel="stylesheet" href="/css/style.css">
-        <script src="https://kit.fontawesome.com/25ef39d1cb.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-           <!-- Your header title and shopping cart button goes here  -->
-           <header>
-            <h1>TechStore</h1>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="cart_item">
-                        <div class="cart_title">
-                        <i class="fas fa-shopping-cart"></i>
-                        <div class="cart_items">
-                            <div class="cart_item">
-                                <div class="col-md-4">
-                                    <div class="row cart_total-price">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                  </div>
-        </header>
 
-        <main>
-            <div class="cart_title">
-            <h2 class="cart_title">kundvagnen</h2><i class="fas fa-shopping-cart"></i>
+<head>
+    <title>TechStore</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/25ef39d1cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-item">
+            <a href="./index.html" class="page-name">Tech-Store</a>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <a href="./shoppingCart.html" class="shopping-cart"><i class="fas fa-shopping-cart"></i></a>
         </div>
-            <!-- Add the content of your site here via javascript -->
-           <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                   <div class="products">
-                      <div class="flex-cotainer">
-                             <div class="product">
-                                 <div class="product-image">
-                                     <img src="./assets/iPhoneX.png" alt="iphoneX">
-                                 </div>
-                                        <h2 class="product_title">iPhone X</h2>
-                                        <p>Last years phone from Apple with a beautiful all display front.</p>
-                                        <h3 class="product_price">11495 kr</h3>
-                                        <button class="lägg till i kundvagnen">lägg till i kundvagnen<i class="fas fa-shopping-cart"></i></button>
-                                        <button class="cart_item-remove">ta bort<i class="fas fa-trash"></i></button>
-                                    </div>
-                                    <div class="product">
-                                    <div class="product-image">
-                                        <img src="./assets/OnePlus5.png" alt="OnePlus5">
-                                    </div>
-                                        <h2 class="product_title">One Plus 5</h2>
-                                        <p>Sleek and powerful smartphone from One Plus.</p>
-                                        <h3 class="product_price">4995 kr</h3>
-                                        <button class="lägg till i kundvagnen">lägg till i kundvagnen<i class="fas fa-shopping-cart"></i></button>
-                                        <button class="cart_item-remove">ta bort<i class="fas fa-trash"></i></button>
-                                    </div>
-                                    <div class="product">
-                                    <div class="product-image">
-                                        <img src="./assets/SamsungS8.png" alt="SamsungS8">
-                                    </div>
-                                        <h2 class="product_title">Galaxy S8</h2>
-                                        <p>Really cool edge to edge smartphone from Samsung.</p>
-                                        <h3 class="product_price">7990 kr</h3>
-                                        <button class="lägg till i kundvagnen">lägg till i kundvagnen<i class="fas fa-shopping-cart"></i></button>
-                                        <button class="cart_item-remove">ta bort<i class="fas fa-trash"></i></button>
-                                    </div>
-                                    <div class="product">
-                                    <div class="product-image">
-                                        <img src="./assets/LGV30.png" alt="LGV30">
-                                    </div>
-                                        <h2 class="product_title">LG V30</h2>
-                                        <p>Super nice and beautiful smartphone from LG.</p>
-                                        <h3 class="product_price">7495 kr</h3>
-                                        <button class="lägg till i kundvagnen">lägg till i kundvagnen<i class="fas fa-shopping-cart"></i></button>
-                                        <button class="cart_item-remove">ta bort<i class="fas fa-trash"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                  </div>
-             <div class="row">
-              <div class="col-md-12">
-                 <div class="cart_item">
-                    <div class="cart_items">
-                       <div class="cart_item">
-                         <div class="col-md-4">
-                            <div class="cart_total-price">Total Price:</div>
-                             </div>
-                         </div>
-                     </div>
-                   </div>
-                 </div>
-              </div>
-        </main>
-    </body>
+    </div>
+
+    <div class="container">
+        <div class="content"></div>
+    </div>
+    <div class="footer">
+        <ul class="footer-items">
+            <li>
+                <p>©copy-right: Teck-Store</p>
+            </li>
+            <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
 </html>
